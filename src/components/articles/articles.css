@@ -5,7 +5,6 @@
 }
 
 .articles-container article {
-  /* flex: 1; makes a trick of doing equal size */
   flex: 1;
   padding: 10px;
   margin: 5px;
