@@ -2,7 +2,7 @@
 
 Testing Astro with Preact on Vercel.
 
-Looking for something "Blazingly fast" for Blogs, Portfolios, Docs and Landing Pages.
+Looking for something "Blazingly fast" for Blogs, Portfolios and Landing Pages.
 
 ### 📝 Docs 
 * [Astro](https://docs.astro.build/en/concepts/why-astro/)
