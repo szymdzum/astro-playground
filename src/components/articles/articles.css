@@ -1,0 +1,16 @@
+h1 {
+  font-weight: 600;
+  margin: 0 0 5px 0;
+}
+p {
+  margin: 5px 0;
+}
+article {
+  box-sizing: border-box;
+  background: #FFF;
+  margin: 5px;
+  flex: 1;
+}
+.not-real {
+  align-self: flex-end;
+}

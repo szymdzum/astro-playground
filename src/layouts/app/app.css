@@ -27,6 +27,11 @@
     text-align: center;
   }
 
+  section {
+    margin: 1em 0;
+    height: 400px;
+  }
+
   :global(h1) {
     font-size: var(--font-size-xl);
   }
