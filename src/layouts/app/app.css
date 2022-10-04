@@ -7,6 +7,21 @@
     --color-text: hsl(12, 5%, 4%);
     --color-bg: hsl(10, 21%, 95%);
     --color-border: hsl(17, 24%, 90%);
+
+    --astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+  }
+
+  :global(h1) {
+    font-size: var(--font-size-xl);
+  }
+
+  :global(h2) {
+    font-size: var(--font-size-lg);
+  }
+
+  :global(code) {
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+      Bitstream Vera Sans Mono, Courier New, monospace;
   }
 
   html {
@@ -29,21 +44,4 @@
   section {
     margin: 1em 0;
     height: 300px;
-  }
-
-  h1 {
-    margin: 2rem 0;
-  }
-
-  :global(h1) {
-    font-size: var(--font-size-xl);
-  }
-
-  :global(h2) {
-    font-size: var(--font-size-lg);
-  }
-
-  :global(code) {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-      Bitstream Vera Sans Mono, Courier New, monospace;
   }
