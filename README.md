@@ -4,8 +4,6 @@ Testing Astro with Preact on Vercel.
 
 Looking for something "Blazingly fast" for Blogs, Portfolios, Docs and Landing Pages.
 
-Looka like this might be it
-
 ### 📝 Docs 
 * [Astro](https://docs.astro.build/en/concepts/why-astro/)
 * [Preact](https://preactjs.com/guide/v10/getting-started) (3kb React lol)
