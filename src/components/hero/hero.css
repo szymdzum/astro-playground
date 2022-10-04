@@ -1,5 +1,7 @@
-h1 {
-  margin: 2rem 0;
+
+
+.hero-container {
+  text-align: center;
 }
 
 .text-gradient {
