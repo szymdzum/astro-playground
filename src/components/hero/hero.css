@@ -1,8 +1,7 @@
-
-
 .hero-container {
   text-align: center;
-  background-color: #00ffff3d;
+  background-color: #fff;
+  padding: 20px;
 }
 
 .text-gradient {

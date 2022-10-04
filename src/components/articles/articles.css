@@ -1,25 +1,20 @@
 .articles-container {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: stretch;
 }
 
 .articles-container article {
+  /* flex: 1; makes a trick of doing equal size */
+  flex: 1;
   padding: 10px;
+  margin: 5px;
   box-sizing: border-box;
   background: #FFF;
-  margin: 5px;
-  flex: 1;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .articles-container article h1 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.not-real {
-  align-self: flex-end;
 }
