@@ -1,0 +1,19 @@
+.articles-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.articles-container article {
+  flex: 1;
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  background: #FFF;
+}
+
+.articles-container article h1 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
