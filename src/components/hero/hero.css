@@ -1,7 +1,12 @@
-.hero-container {
+.hero {
   text-align: center;
   background-color: #fff;
   padding: 20px;
+}
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .text-gradient {
