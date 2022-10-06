@@ -35,6 +35,14 @@
     padding-top: 3rem;
   }
 
+  .section-header {
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Stack */
+
   .stack {
     display: flex;
     flex-direction: column;
@@ -48,7 +56,6 @@
   }
 
   /* Design Helpers */
-
   /* Test Border */
   * {
     border: 1px dotted var(--test-border);

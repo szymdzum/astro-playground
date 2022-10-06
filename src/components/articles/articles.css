@@ -9,7 +9,7 @@
   margin: 0.5rem;
   box-sizing: border-box;
 }
-.articles-container article h1 {
+.articles-container article h3 {
   margin: 0;
   font-size: 1.2rem;
   font-weight: 600;
