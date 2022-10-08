@@ -1,14 +1,8 @@
-.hero {
-  text-align: center;
-  background-color: #fff;
-  padding: 20px;
-}
-.hero h1 {
+h1 {
   font-size: 2rem;
   font-weight: 600;
   margin: 0;
 }
-
 .text-gradient {
   font-weight: 900;
   background-image: var(--astro-gradient);

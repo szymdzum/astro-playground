@@ -1,24 +1,26 @@
 ---
-
 import Container from '../../layouts/container/container.astro';
 import './articles.css';
 ---
 
 <Container>
-    <h2 class="section-header">The Stack Layout</h2>
-    <div class="articles-container">
-    <article class="stack">
+  <h2 class="center">The Stack in The Box</h2>
+  <div class="articles-container">
+    <article class="stack box">
       <h3>Stack</h3>
-      <p>Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
-    </article>
-    <article class="stack">
-      <h3>Stack with last child</h3>
+      <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+      <p>The trick is to style the context, not the individual element(s).</p>
       <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-      <p>Etiam porta sem malesuada magna mollis euismod.</p>
     </article>
-    <article class="stack">
-      <h3>Phoney</h3>
-      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec id elit non mi porta gravida at eget metus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+    <article class="stack-small box">
+      <h3>Stack Small</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
+    </article>
+    <article class="stack-large box invert">
+      <h3>Stack Large & Inverted Colours</h3>
+      <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh</p>
     </article>
   </div>
 </Container>
