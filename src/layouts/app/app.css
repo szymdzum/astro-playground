@@ -34,15 +34,29 @@
     color: var(--color-text);
     background-color: var(--color-bg);
   }
+
   body {
     margin: 0;
     padding-top: 3rem;
   }
 
-  .section-header {
-    text-align: center;
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 110ch;
     padding: 0 1rem;
-    margin-bottom: 1rem;
+  }
+
+  header ul {
+    list-style: none;
+  }
+
+  header a {
+    text-decoration: none;
   }
 
   /* Design Helpers */
@@ -58,15 +72,19 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .stack-small > * + * {
     margin-top: var(--space, 0.5rem);
   }
+
   .stack > * + * {
     margin-top: var(--space, 1.5rem);
   }
+
   .stack-large > * + * {
     margin-top: var(--space, 3rem);
   }
+
   .stack:only-child {
     height: 100%;
   }
@@ -104,10 +122,22 @@
 
   .center {
     box-sizing: content-box;
-    max-width: 60ch;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .cluster {
+    /* ↓ Set the Flexbox context */
+    display: flex;
+    /* ↓ Enable wrapping */
+    flex-wrap: wrap;
+    /* ↓ Set the space/gap */
+    gap: var(--space, 1rem);
+    /* ↓ Choose your justification (flex-start is default) */
+    justify-content: center;
+    /* ↓ Choose your alignment (flex-start is default) */
     align-items: center;
   }
