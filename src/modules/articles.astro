@@ -1,0 +1,83 @@
+---
+import Box from '../layouts/box.astro';
+import Container from '../layouts/container/container.astro';
+---
+
+<style>
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .articles-container article {
+    flex: 1;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+  }
+  .articles-container article h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+</style>
+
+<Container>
+  <h2 class="center">The Stack in The Box</h2>
+  <div class="switcher articles-container">
+
+    <Box class="article" data-label="Architecture">
+      <article class="stack">
+        <h3 class="article-title">
+          <a href="/article/3d-home/#top">
+            Stack
+          </a>
+        </h3>
+        <img
+          class="article-screenshot"
+          src="https://drive.google.com/uc?export=view&id=1GWyxh8xmEuUlve7vYoVVHbMhKh9UDxYO"
+          alt="Figma Screenshot"
+        />
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+
+    <Box class="article" data-label="Architecture">
+      <article class="stack-small">
+        <h3 class="article-title">
+          <a href="/article/3d-home/#top">
+            Stack Small
+          </a>
+        </h3>
+        <img
+          class="article-screenshot"
+          src="https://drive.google.com/uc?export=view&id=1GWyxh8xmEuUlve7vYoVVHbMhKh9UDxYO"
+          alt="Figma Screenshot"
+        />
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+    
+    <Box class="article" data-label="Architecture">
+      <article class="stack-large">
+        <h3 class="article-title">
+          <a href="/article/3d-home/#top">
+            Stack Large
+          </a>
+        </h3>
+        <img
+          class="article-screenshot"
+          src="https://drive.google.com/uc?export=view&id=1GWyxh8xmEuUlve7vYoVVHbMhKh9UDxYO"
+          alt="Figma Screenshot"
+        />
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+    </div>
+</Container>

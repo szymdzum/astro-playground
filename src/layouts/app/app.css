@@ -104,6 +104,7 @@
     outline: var(--border-thin) transparent;
     outline-offset: calc(var(--border-thin) * -1);
     /* ↓ The light and dark color vars */
+    /* That needs to go somewhere else. */
     --color-light: #fff;
     --color-dark: #000;
     color: var(--color-dark);
