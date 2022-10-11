@@ -1,0 +1,23 @@
+---
+import Container from "../layouts/container/container.astro";
+import Grid from "../layouts/grid.astro";
+---
+<Container>
+  <h2> Features </h2>
+  <Grid>
+<!--- generate 6 features icons with text -->
+    {[1, 2, 3, 4, 5].map((num) => (
+      <span>
+        {/* add hover */}
+        <div>
+          <span>
+            <img alt="Astro Logo" />
+            </span>
+            <h4>
+              No Dependencies
+          </h4>
+        </div>
+      </span>
+    ))}
+  </Grid>
+</Container>
