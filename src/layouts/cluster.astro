@@ -1,0 +1,25 @@
+<style>
+  .cluster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space, 1rem);
+    /* ↓ Choose your justification (flex-start is default) */
+    justify-content: space-between;
+    /* ↓ Choose your alignment (flex-start is default) */
+    align-items: center;
+  }
+</style>
+
+<div class="cluster">
+  <slot />
+</div>
+
+<!--
+  Cluster components suit any groups of elements that differ in length and are liable to wrap.
+  Buttons that appear together at the end of forms are ideal candidates, as well as lists of tags,
+  keywords, or other meta information. Use the Cluster to align any groups of horizontally
+  laid out elements to the left or right, or in the center.
+
+  TODO: Need to have justyfy-content dynamic. Esentially need to pass props to the cluster
+  TODO: Can cluster contain <ul> or <ol>? Gonna figure out later during components
+-->
