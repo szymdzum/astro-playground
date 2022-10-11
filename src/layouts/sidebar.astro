@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     /* ↓ The default value is the first point on the modular scale */
-    gap: var(--gutter, var(--s1));
+   
   }
   .with-sidebar > :first-child {
     /* ↓ The width when the sidebar _is_ a sidebar */
@@ -22,9 +22,3 @@
 <div class="with-sidebar">
   <slot />
 </div>
-
-<!--
-  The Sidebar is applicable to all sorts of content.
-  The ubiquitous “media object” (the placing of an item of media next to a description)
-  is a mainstay, but it can also be used to align buttons with form inputs
--->
