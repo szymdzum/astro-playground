@@ -1,9 +1,14 @@
 ---
 import Container from "../layouts/container.astro";
+import Center from "../layouts/center.astro";
 import Grid from "../layouts/grid.astro";
+
 ---
 <Container>
-  <h2> Features </h2>
+  <Center>
+    <h2>Features 🦄</h2>
+    <p>Testing Grid Layout here</p>
+  </Center>
   <Grid>
     {[1, 2, 3, 4, 5].map((num) => (
       <span>

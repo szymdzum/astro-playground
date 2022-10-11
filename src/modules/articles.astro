@@ -1,6 +1,7 @@
 ---
-import Box from '../layouts/box.astro';
 import Container from '../layouts/container.astro';
+import Center from '../layouts/center.astro';
+import Box from '../layouts/box.astro';
 ---
 
 <style>
@@ -23,9 +24,16 @@ import Container from '../layouts/container.astro';
 </style>
 
 <Container>
-  <h2 class="center">The Stack in The Box</h2>
+  <Center>
+    <h2>
+      The Stack in The Box 📦
+    </h2>
+    <p>
+      Testing Stack within Box in a Switcher Layout here
+    </p>
+  </Center>
+ 
   <div class="switcher articles-container">
-
     <Box class="article" data-label="Architecture">
       <article class="stack">
         <h3 class="article-title">
