@@ -1,11 +1,12 @@
 ---
-import App from "../../layouts/app/app.astro";
-import Container from "../../layouts/container.astro";
+import App from "../layouts/app/app.astro";
+import Container from "../layouts/container.astro";
+import Sidebar from "../layouts/sidebar.astro";
 ---
 
 <App title="Post test">
   <Container>
-    <div class="with-sidebar">
+    <Sidebar>
       <div class="sidebar">
         <h3>sidebar</h3>
       </div>
@@ -23,6 +24,6 @@ import Container from "../../layouts/container.astro";
           risus aliquam, pharetra egestas nibh.
         </p>
       </div>
-    </div>
+    </Sidebar>
   </Container>
 </App>

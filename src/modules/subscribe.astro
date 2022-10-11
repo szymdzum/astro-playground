@@ -1,18 +1,21 @@
 ---
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
+import Sidebar from '../layouts/sidebar.astro';
 ---
 
 <Container>
   <Center>
     <h2>Subscribe 📮</h2>
-    <p>Testing mailmonk here</p>
+    <p>Testing Sidebar, CSS components and mailmonk here 🤠</p>
   </Center>
   <form action="/">
     <label for="email2">Enter your email:</label>
-    <input id="email2" name="email" type="email" />
-    <button type="submit">
-      Subscribe
-    </button>
+    <Sidebar>
+      <input id="email2" name="email" type="email" />
+      <button type="submit">
+        Subscribe
+      </button>
+    </Sidebar>
   </form>
 </Container>
