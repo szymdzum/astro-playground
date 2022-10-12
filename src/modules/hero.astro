@@ -1,0 +1,50 @@
+---
+import Container from '../layouts/container.astro';
+import Center from '../layouts/center.astro';
+---
+
+<style>
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .text-gradient {
+    font-weight: 900;
+    background-image: var(--astro-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position-y: 100%;
+    border-radius: 0.4rem;
+    animation: pulse 4s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      background-position-y: 0%;
+    }
+    50% {
+      background-position-y: 80%;
+    }
+  }
+</style>
+
+<Container>
+  <Center>
+    <h1>
+      <span class="text-gradient">
+        Kumak
+      </span>
+        🐸 in Spaaaaace 🚀
+    </h1>
+    <p>
+      Working on CSS Layout Primitives
+    </p>
+    <div class="frame">
+      <img src="../../public/astronaut.jpg" alt="description of the image here" />
+    </div>
+  </Center>
+</Container>

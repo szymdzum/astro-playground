@@ -1,0 +1,38 @@
+---
+import Container from "../layouts/container.astro";
+import Cluster from "../layouts/cluster.astro";
+import Logo from "../components/logo.astro";
+---
+
+<style>
+
+</style>
+
+<header>
+  <Container>
+    <Cluster>
+      <Logo />
+        <nav>
+          <ul>
+            <Cluster>
+              <li>
+                <a href="/post">
+                  Post
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  Preact
+                </a>
+              </li>
+              <li>
+                <a href="/markdown">
+                  Markdown
+                </a>
+              </li>
+            </Cluster>
+          </ul>
+        </nav>
+    </Cluster>
+  </Container>
+</header>

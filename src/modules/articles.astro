@@ -1,0 +1,82 @@
+---
+import Container from '../layouts/container.astro';
+import Center from '../layouts/center.astro';
+import Box from '../layouts/box.astro';
+---
+
+<style>
+  .articles-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .articles-container article {
+    flex: 1;
+    padding: 1rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+  }
+  .articles-container article h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+</style>
+
+<Container>
+  <Center>
+    <h2>
+      The Stack in The Box 📦
+    </h2>
+    <p>
+      Testing Stack within Box in a Switcher Layout
+    </p>
+  </Center>
+ 
+  <div class="switcher articles-container">
+
+    <Box>
+      <article class="stack">
+        <h3>
+          <a href="#">
+            Stack
+          </a>
+        </h3>
+        <img
+          src="https://placeimg.com/500/320/animals"
+          alt="Screenshot"
+        />
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+
+    <Box>
+      <article class="stack-small">
+        <h3>
+          <a href="#">
+            Stack Small
+          </a>
+        </h3>
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+    
+    <Box>
+      <article class="stack-large">
+        <h3>
+          <a href="#">
+            Stack Large
+          </a>
+        </h3>
+        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
+        <p>The trick is to style the context, not the individual element(s).</p>
+        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+      </article>
+    </Box>
+
+  </div>
+</Container>
