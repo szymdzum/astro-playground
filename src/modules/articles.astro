@@ -2,6 +2,7 @@
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
 import Box from '../layouts/box.astro';
+import AspectRatio from '../layouts/aspect-ratio.astro';
 ---
 
 <style>
@@ -42,10 +43,12 @@ import Box from '../layouts/box.astro';
             Stack
           </a>
         </h3>
+        <AspectRatio>
         <img
           src="https://placeimg.com/500/320/animals"
           alt="Screenshot"
         />
+        </AspectRatio>
         <p>The Stack layout primitive injects margin between elements via their common parent.</p>
         <p>The trick is to style the context, not the individual element(s).</p>
         <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
