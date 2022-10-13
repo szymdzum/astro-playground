@@ -1,11 +1,11 @@
 <style is:global>
   .reel {
     /* ↓ Custom properties for ease of adjustment */
-    --space: 1rem;
+
     --color-light: #fff;
     --color-dark: #000;
     --reel-height: auto;
-    --item-width: 25ch;
+ 
     display: flex;
     height: var(--reel-height);
     /* ↓ Overflow */
@@ -13,6 +13,19 @@
     overflow-y: hidden;
     /* ↓ For Firefox */
     scrollbar-color: var(--color-light) var(--color-dark);
+  }
+  .reel > * { 
+    /*
+    ↓ Just a `width` wouldn’t work because
+    `flex-shrink: 1` (default) still applies
+    */
+    flex: 0 0 ;
+  }
+  .reel > img {
+    /* ↓ Reset for images */
+    height: 100%;
+    flex-basis: auto;
+    width: auto;
   }
   .reel::-webkit-scrollbar {
     /*
@@ -23,7 +36,7 @@
     height: 1rem;
   }
   .reel::-webkit-scrollbar-track {
-    background-color: var(--color-dark);
+    background-color: var(--color-light);
   }
   .reel::-webkit-scrollbar-thumb {
     background-color: var(--color-dark);
@@ -31,18 +44,6 @@
     background-image: linear-gradient(var(--color-dark) 0, var(--color-dark)
   0.25rem, var(--color-light) 0.25rem, var(--color-light) 0.75rem, var(--color-
   dark) 0.75rem);
-  }
-  .reel > * { /*
-    ↓ Just a `width` wouldn’t work because
-    `flex-shrink: 1` (default) still applies
-    */
-    flex: 0 0 var(--item-width);
-  }
-  .reel > img {
-    /* ↓ Reset for images */
-    height: 100%;
-    flex-basis: auto;
-    width: auto;
   }
 </style>
 
