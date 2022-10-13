@@ -1,4 +1,4 @@
-<style>
+<style is:global>
   .switcher {
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +6,7 @@
     /* ↓ The default value is the first point on the modular scale */
     gap: var(--gutter, var(--s1));
     /* ↓ The width at which the layout “breaks” */
+    /* TODO: Why rems not ch ? */
     --threshold: 40rem;
   }
   .switcher > * {

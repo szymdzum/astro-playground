@@ -2,8 +2,8 @@
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
 import Sidebar from '../layouts/sidebar.astro';
+import Icon from '../layouts/icon.astro';
 ---
-
 <Container>
   <Center>
     <h2>Subscribe 📮</h2>
@@ -14,7 +14,9 @@ import Sidebar from '../layouts/sidebar.astro';
     <Sidebar>
       <input id="email2" name="email" type="email" />
       <button type="submit">
-        Subscribe
+        <Icon>
+          Subscribe
+        </Icon>
       </button>
     </Sidebar>
   </form>

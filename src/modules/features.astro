@@ -2,6 +2,7 @@
 import Container from "../layouts/container.astro";
 import Center from "../layouts/center.astro";
 import Grid from "../layouts/grid.astro";
+import saturnIcon from '../../public/icons/saturn.svg';
 ---
 <style>
   img {
@@ -21,7 +22,7 @@ import Grid from "../layouts/grid.astro";
   <Grid>
     {[1, 2, 3, 4, 5].map((num) => (
       <div>
-        <img src="../../public/icons/saturn.svg" alt="Astro Logo" />
+        <img src={saturnIcon} alt="Astro Logo" />
           <h4>
             Look at this planet dude!
           </h4>

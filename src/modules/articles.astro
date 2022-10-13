@@ -2,21 +2,17 @@
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
 import Box from '../layouts/box.astro';
+import Switcher from '../layouts/switcher.astro';
+import AspectRatio from '../layouts/aspect-ratio.astro';
 ---
-
 <style>
-  .articles-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-  }
-  .articles-container article {
+  article {
     flex: 1;
     padding: 1rem;
     margin: 0.5rem;
     box-sizing: border-box;
   }
-  .articles-container article h3 {
+  article h3 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: 600;
@@ -29,29 +25,25 @@ import Box from '../layouts/box.astro';
       The Stack in The Box 📦
     </h2>
     <p>
-      Testing Stack within Box in a Switcher Layout
+      Testing Box within in a Switcher Layout with Responsive Images
     </p>
   </Center>
- 
-  <div class="switcher articles-container">
-
+  <Switcher>
     <Box>
-      <article class="stack">
+      <article>
         <h3>
           <a href="#">
             Stack
           </a>
         </h3>
-        <img
-          src="https://placeimg.com/500/320/animals"
-          alt="Screenshot"
-        />
+        <AspectRatio>
+          <img src="https://placeimg.com/500/320/animals" alt="Screenshot" />
+        </AspectRatio>
         <p>The Stack layout primitive injects margin between elements via their common parent.</p>
         <p>The trick is to style the context, not the individual element(s).</p>
         <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       </article>
     </Box>
-
     <Box>
       <article class="stack-small">
         <h3>
@@ -64,7 +56,6 @@ import Box from '../layouts/box.astro';
         <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       </article>
     </Box>
-    
     <Box>
       <article class="stack-large">
         <h3>
@@ -77,6 +68,5 @@ import Box from '../layouts/box.astro';
         <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
       </article>
     </Box>
-
-  </div>
+  </Switcher>
 </Container>
