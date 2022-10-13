@@ -4,12 +4,42 @@ import Center from '../layouts/center.astro';
 import Box from '../layouts/box.astro';
 import Switcher from '../layouts/switcher.astro';
 import AspectRatio from '../layouts/aspect-ratio.astro';
+
+const articles = [
+  {
+    slug: '#',
+    image: {
+      alt: '',
+      src: 'https://placeimg.com/500/320/animals',
+    },
+    title: 'Stack',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus suscipit mauris eu ultrices. ',
+  },
+  {
+    slug: '#',
+    image: {
+      alt: '',
+      src: 'https://placeimg.com/500/320/animals',
+    },
+    title: 'Other',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus suscipit mauris eu ultrices. ',
+  },
+  {
+    slug: '#',
+    image: {
+      alt: '',
+      src: 'https://placeimg.com/500/320/animals',
+    },
+    title: 'Animals 🐈',
+    excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus suscipit mauris eu ultrices. ',
+  }
+]
 ---
 <style>
   article {
     flex: 1;
     padding: 1rem;
-    margin: 0.5rem;
+    margin: 1rem;
     box-sizing: border-box;
   }
   article h3 {
@@ -29,44 +59,20 @@ import AspectRatio from '../layouts/aspect-ratio.astro';
     </p>
   </Center>
   <Switcher>
-    <Box>
-      <article>
-        <h3>
-          <a href="#">
-            Stack
-          </a>
-        </h3>
-        <AspectRatio>
-          <img src="https://placeimg.com/500/320/animals" alt="Screenshot" />
-        </AspectRatio>
-        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
-        <p>The trick is to style the context, not the individual element(s).</p>
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-      </article>
-    </Box>
-    <Box>
-      <article class="stack-small">
-        <h3>
-          <a href="#">
-            Stack Small
-          </a>
-        </h3>
-        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
-        <p>The trick is to style the context, not the individual element(s).</p>
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-      </article>
-    </Box>
-    <Box>
-      <article class="stack-large">
-        <h3>
-          <a href="#">
-            Stack Large
-          </a>
-        </h3>
-        <p>The Stack layout primitive injects margin between elements via their common parent.</p>
-        <p>The trick is to style the context, not the individual element(s).</p>
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-      </article>
-    </Box>
+    {articles.map(({slug, image, title, excerpt}) => (
+      <Box>
+        <article>
+          <h3>
+            <a href={slug}>{title}</a>
+          </h3>
+          <AspectRatio>
+            <img src={image.src} alt={image.alt} />
+          </AspectRatio>
+          <p>
+            {excerpt}
+          </p>
+        </article>
+      </Box>
+    ))}
   </Switcher>
 </Container>
