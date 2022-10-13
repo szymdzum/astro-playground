@@ -1,6 +1,7 @@
 ---
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
+import AspectRatio from '../layouts/aspect-ratio.astro';
 ---
 <style>
   h1 {
@@ -42,8 +43,8 @@ import Center from '../layouts/center.astro';
     <p>
       Working on CSS Layout Primitives
     </p>
-    <!-- <div class="frame">
-      <img src="../../public/astronaut.jpg" alt="description of the image here" />
-    </div> -->
   </Center>
+    <AspectRatio>
+      <img src="../../public/astronaut.jpg" alt="description of the image here" />
+    </AspectRatio>
 </Container>
