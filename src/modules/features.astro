@@ -2,7 +2,36 @@
 import Container from "../layouts/container.astro";
 import Center from "../layouts/center.astro";
 import Grid from "../layouts/grid.astro";
-import saturnIcon from '../../public/icons/saturn.svg';
+
+import planet_icon from '../../public/icons/saturn.svg';
+
+const planets = [
+  {
+    name: "Mercury",
+    distance: 0.3,
+    src: planet_icon
+  },
+  {
+    name: "Venus",
+    distance: 0.7,
+    src: planet_icon
+  },
+  {
+    name: "Mars",
+    distance: 2,
+    src: planet_icon
+  },
+  {
+    name: "Saturn",
+    distance: 6.29,
+    src: planet_icon
+  },
+  {
+    name: "Jupiter",
+    distance: 5,
+    src: planet_icon
+  },
+];
 ---
 <style>
   img {
@@ -20,16 +49,16 @@ import saturnIcon from '../../public/icons/saturn.svg';
     <p>Testing Grid Layout</p>
   </Center>
   <Grid>
-    {[1, 2, 3, 4, 5].map((num) => (
+    {planets.map(({ name, distance, src}) => (
       <div>
-        <img src={saturnIcon} alt="Astro Logo" />
+        <img src={src} alt={name} />
           <h4>
-            Look at this planet dude!
+            {name}
           </h4>
           <p>
-            Some important stuff comes here sponsored by number: {num}
+            The distance is: {distance}
           </p>
-        </div>
+      </div>
     ))}
   </Grid>
 </Container>

@@ -2,6 +2,33 @@
 import Container from '../layouts/container.astro';
 import Center from '../layouts/center.astro';
 import Reel from '../layouts/reel.astro';
+
+const pictures = [
+  {
+    src: 'https://unsplash.it/150/150?image=931',
+    author: 'Paul Earle',
+  },
+  {
+    src: 'https://unsplash.it/150/150?image=974',
+    author: 'John Towner',
+  },
+  {
+    src: 'https://unsplash.it/150/150?image=979',
+    author: 'Liane Metzler',
+  },
+  {
+    src: 'https://unsplash.it/150/150?image=984',
+    author: 'Greg Rakozy',
+  },
+  {
+    src: 'https://unsplash.it/150/150?image=997',
+    author: 'Sven Scheuermeier',
+  },
+  {
+    src: 'https://unsplash.it/150/150?image=888',
+    author: 'Alberto Restifo',
+  }
+];
 ---
 <style>
 /* 
@@ -46,29 +73,11 @@ import Reel from '../layouts/reel.astro';
     </p>
   </Center>
   <Reel>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=931" width="150" height="150" alt="random image"/>
-      <figcaption>Paul Earle</figcaption>
-    </figure>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=974" width="150" height="150" alt="Greg Rakozy"/>
-      <figcaption>Greg Rakozy</figcaption>
-    </figure>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=973" width="150" height="150" alt="Cameron Kirby"/>
-      <figcaption>Cameron Kirby</figcaption>
-    </figure>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=965" width="150" height="150" alt="Liane Metzler"/>
-      <figcaption>Liane Metzler</figcaption>
-    </figure>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=961" width="150" height="150" alt="Sven Scheuermeier"/>
-      <figcaption>Sven Scheuermeier</figcaption>
-    </figure>
-    <figure>
-      <img src="https://unsplash.it/150/150?image=966" width="150" height="150" alt="Alberto Restifo"/>
-      <figcaption>Alberto Restifo</figcaption>
-    </figure>
+    {pictures.map(({src, author}) => (
+      <figure>
+        <img src={src} alt={author} />
+        <figcaption>{author}</figcaption>
+      </figure>
+    ))}
   </Reel>
 </Container>
